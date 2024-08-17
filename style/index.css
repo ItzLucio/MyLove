@@ -233,6 +233,45 @@ hr {
     width: auto;
 }
 
+.sliding:nth-child(2) img {
+    transition-delay: 200ms;
+}
+
+.sliding:nth-child(3) img {
+    transition-delay: 400ms;
+}
+
+.sliding:nth-child(4) img {
+    transition-delay: 600ms;
+}
+
+.sliding:nth-child(5) img {
+    transition-delay: 800ms;
+}
+
+.sliding:nth-child(6) img {
+    transition-delay: 1000ms;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-80%);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none !important;
+    }
+} 
+
 @media (width < 900px) {
     .wrapper {
         width: 75%;
