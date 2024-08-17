@@ -233,7 +233,7 @@ hr {
     width: auto;
 }
 
-@media (width < 900px) {
+@media (max-width < 900px) {
     .wrapper {
         width: 75%;
     }
@@ -297,8 +297,29 @@ hr {
     }
 }
 
-@media (width < 768px) {
+@media (max-width < 768px) {
     .wrapper {
         width: 85%;
+    }
+}
+
+@media (max-width < 500px) {
+    .hero h1 {
+        font-size: 15vw !important;
+    }
+
+    .hero .top h2, .hero .top h3 {
+        text-align: center !important;
+    }
+
+    .hero .bottom {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .hero p {
+        width: 70% !important;
+        font-size: 4.2vw !important;
+        text-align: center !important;
     }
 }
