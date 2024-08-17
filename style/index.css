@@ -233,7 +233,7 @@ hr {
     width: auto;
 }
 
-@media (max-width < 900px) {
+@media (width < 900px) {
     .wrapper {
         width: 75%;
     }
@@ -297,13 +297,13 @@ hr {
     }
 }
 
-@media (max-width < 768px) {
+@media (width < 768px) {
     .wrapper {
         width: 85%;
     }
 }
 
-@media (max-width < 500px) {
+@media (width < 500px) {
     .hero h1 {
         font-size: 15vw !important;
     }
