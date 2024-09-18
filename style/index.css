@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 html {
+    scroll-behavior: smooth;
+
     --bg-start-color: #0B0D11;
     --bg-end-color: #11182F;
 
@@ -200,57 +202,73 @@ hr {
 }
 
 .slide {
-    margin-top: 8rem;
     width: 100%;
-    height: auto;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.slide section {
+    margin-top: -5rem;
+    width: 100%;
+    display: flex;
+    min-height: 10rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .slide h2 {
     font-size: 2.5rem;
-    margin-bottom: 3.5rem;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+}
+
+.slide h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: .17rem;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 .slide-list {
+    height: 100% !important;
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    width: 70%;
     padding: 0 !important;
+    margin: 0 !important;
 }
 
 .sliding {
     height: 35px;
-    width: auto;
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding p {
+    text-align: right;
 }
 
 .sliding img {
     height: 100%;
     width: auto;
-}
-
-.sliding:nth-child(2) img {
-    transition-delay: 200ms;
-}
-
-.sliding:nth-child(3) img {
-    transition-delay: 400ms;
-}
-
-.sliding:nth-child(4) img {
-    transition-delay: 600ms;
-}
-
-.sliding:nth-child(5) img {
-    transition-delay: 800ms;
-}
-
-.sliding:nth-child(6) img {
-    transition-delay: 1000ms;
 }
 
 .hidden {
@@ -333,6 +351,11 @@ hr {
 
     .sliding {
         padding: 1rem 0;
+    }
+
+    .slide section {
+        margin-top: -12rem !important;
+        flex-direction: column;
     }
 }
 
