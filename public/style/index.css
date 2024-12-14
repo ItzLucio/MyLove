@@ -1,13 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parkinsans:wght@300..800&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 * {
-    color: white;
     font-family: "Parkinsans", sans-serif;
-    text-decoration: none;
 }
 
 body {
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(18, 18, 18) !important;
+}
+
+.countdown-text {
+    font-family: "Kanit", Helvetica, sans-serif !important;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: .4rem;
+}
+
+#first-blur-glow {
+    position: absolute;
+    top: 20%;
+    left: -2%;
+    right: auto;
+}
+
+#first-blur-glow {
+    position: absolute;
+    top: 35%;
+    left: auto;
+    right: -5%;
+}
+
+.open-transition {
+    animation: .8s ease-in-out startTransition;
+}
+
+.love-transition {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(163, 7, 7), rgb(145, 6, 6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: loveText infinite ease 1s;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes startTransition {
+    from {
+        opacity: 0%;
+        filter: blur(2px);
+        transform: translateX(-10rem);
+        scale: .95;
+    }
+
+    to {
+        opacity: 100%;
+        filter: blur(0);
+        transform: translateX(0px);
+        scale: 1;
+    }
 }

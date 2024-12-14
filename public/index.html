@@ -1,23 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <title>ItzLucio's House</title>
+    <title>17/12/2024</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <a href="./login">
-            <i class="bi bi-person"></i>
-            ACCEDI
-        </a>
+  <div id="all" style="width: 100%; height: 100%">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid w-75">
+        <a class="navbar-brand" href="#">17/12/2024</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-dark bg-transparent text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-person-exclamation me-2" viewBox="0 0 16 16">
+              <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+              <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5m0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+          </svg>
+          ACCEDI
+      </button>
+      </div>
     </nav>
+
+    <span id="first-blur-glow" class="blur-glow"></span>
+    <span id="second-blur-glow" class="blur-glow"></span>
+
+    <main class="d-flex align-items-center flex-column">
+      <div class="container-fluid w-75 justify-content-start d-flex" style="margin-top: 5rem;">
+          <h4 class="open-transition text-align-center">Yep, I did definately found my dream girl</h4>
+      </div>
+      <div class="container-fluid w-75 justify-content-around d-flex mt-5">
+        <div class="card bg-transparent overflow-hidden open-transition" style="width: 24rem;">
+          <img src="./imgs/Us.png" class="card-img-top" alt="Il primo incontro">
+          <div class="card-body bg-transparent">
+            <h5 class="card-title love-transition">Il nostro primo incontro</h5>
+            <p class="card-text">lo abbiamo passato stando appiccicati tutto il tempo, mano nella mano passando per tutta Rimini e facendo vedere alle altre coppie quanto noi fossimo perfetti.</p>
+          </div>
+        </div>
+        <div class="card bg-transparent overflow-hidden open-transition" style="width: 24rem;">
+          <img src="./imgs/Us2.png" class="card-img-top" alt="Il primo incontro">
+          <div class="card-body bg-transparent">
+            <h5 class="card-title love-transition">Il mio incontro preferito</h5>
+            <p class="card-text">è stato quando sei venuta da me per la seconda volta, abbiamo mangiato Fish and Ham e siamo stati a casina a riposarci.</p>
+          </div>
+        </div>
+        <div class="card bg-transparent overflow-hidden open-transition" style="width: 24rem;">
+          <img src="./imgs/Us3.png" class="card-img-top" alt="Il primo incontro">
+          <div class="card-body bg-transparent">
+            <h5 class="card-title love-transition">Il nostro ultimo incontro</h5>
+            <p class="card-text">è stato, come ogni ogni incontro, il più doloroso, in quanto dobbiamo poi sempre separarci.</p>
+          </div>
+        </div>
+    </div>
+    </main>
+  </div>
+
+  <div id="countdown" class="w-100 d-flex justify-content-center align-items-center flex-column" style="height: 100vh">
+    <h5>Potrai accedere al sito tra</h5>
+    <h1 class="countdown-text">0 giorni, 0 ore, 0 minuti e 0 secondi</h1>
+    <h5>Aspetta ancora!</h5>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
 </body>
 </html>
