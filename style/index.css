@@ -344,9 +344,7 @@ hr {
     }
 
     .slide-list {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sliding {
