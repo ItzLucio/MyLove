@@ -14,7 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="d-flex justify-content-center flex-column">
+  <audio controls loop autoplay style="display: none;" src="./sounds/one_of_the_girls.mp3" class="oneof"></audio>
+
   <div id="all" style="width: 100%; height: 100%">
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container-fluid w-75">
@@ -27,37 +29,31 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
-            </li>
+            </li> -->
           </ul>
         </div>
-        <button type="button" class="btn btn-dark bg-transparent text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-person-exclamation me-2" viewBox="0 0 16 16">
-              <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-              <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5m0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
-          </svg>
-          ACCEDI
-      </button>
       </div>
     </nav>
 
     <span id="first-blur-glow" class="blur-glow"></span>
     <span id="second-blur-glow" class="blur-glow"></span>
+    <span id="third-blur-glow" class="blur-glow"></span>
 
     <main class="d-flex align-items-center flex-column">
       <div class="container-fluid w-75 justify-content-start d-flex" style="margin-top: 5rem;">
-          <h4 class="open-transition text-align-center">Yep, I did definately found my dream girl</h4>
-      </div>
-      <div class="container-fluid w-75 justify-content-around d-flex mt-5">
+        <h4 class="open-transition text-align-center">I did definately find my <span class="love-transition">dream girl</span></h4>
+        </div>
+        <div class="container-fluid w-75 justify-content-around d-flex mt-5">
         <div class="card bg-transparent overflow-hidden open-transition" style="width: 24rem;">
           <img src="./imgs/Us.png" class="card-img-top" alt="Il primo incontro">
           <div class="card-body bg-transparent">
             <h5 class="card-title love-transition">Il nostro primo incontro</h5>
-            <p class="card-text">lo abbiamo passato stando appiccicati tutto il tempo, mano nella mano passando per tutta Rimini e facendo vedere alle altre coppie quanto noi fossimo perfetti.</p>
+            <p class="card-text">lo abbiamo passato stando appiccicati tutto il tempo, mano nella mano camminando per tutta Rimini e facendo vedere alle altre coppie quanto noi fossimo perfetti.</p>
           </div>
         </div>
         <div class="card bg-transparent overflow-hidden open-transition" style="width: 24rem;">
@@ -71,18 +67,27 @@
           <img src="./imgs/Us3.png" class="card-img-top" alt="Il primo incontro">
           <div class="card-body bg-transparent">
             <h5 class="card-title love-transition">Il nostro ultimo incontro</h5>
-            <p class="card-text">è stato, come ogni ogni incontro, il più doloroso, in quanto dobbiamo poi sempre separarci.</p>
+            <p class="card-text">è stato, come ogni incontro, davvero dolorso, in quanto ci siamo poi dovuti separare.</p>
           </div>
         </div>
-    </div>
+      </div>
+      <div class="container-fluid w-75 justify-content-end d-flex" style="margin-top: 7rem;">
+        <h4 class="open-transition text-align-right">and I pray to her to not leave for someone better, because</h4>
+      </div>
+        <div class="container-fluid w-75 justify-content-around d-flex mt-5">
+          <p class="open-transition">lei è l'unica ragazza sul pianeta che mi fa effettivamente stare bene. E' l'unica ragazza con la quale non mi sento giudicato. E' l'unica ragazza la quale presenza mi riscalda e mi ripara il cuore in modi davvero inimmaginabili. E' l'unica ragazza alla quale ho voglia di dare il buongiorno la mattina e la buonanotte la sera (alle 09:30 in punto!) e sarà sempre la ragazza che amerò più di quanto io ami me stesso.</p>
+        </div>
+      </div>
     </main>
   </div>
 
-  <div id="countdown" class="w-100 d-flex justify-content-center align-items-center flex-column" style="height: 100vh">
+  <div id="countdown" style="height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <h5>Potrai accedere al sito tra</h5>
     <h1 class="countdown-text">0 giorni, 0 ore, 0 minuti e 0 secondi</h1>
     <h5>Aspetta ancora!</h5>
   </div>
+
+  <p class="love-transition mt-5" style="text-align: center;">Website made with <3 by Lucio for Gre</p>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
 </body>

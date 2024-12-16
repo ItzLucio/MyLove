@@ -5,9 +5,6 @@ function formatDuration(date1, date2) {
     const hours = Math.floor(diffMs / (1000 * 60 * 60)) % 24;
     const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 
-    // Aggiungi zeri iniziali per ore, minuti e secondi
-    const pad = (num) => String(num).padStart(2, "0");
-
     return `${days} giorni, ${hours} ore, ${minutes} minuti e ${seconds} secondi`;
 }
 
@@ -18,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const countdownText = document.querySelector(".countdown-text")
 
     const nowDateMS_FirstCheck = new Date().getTime()
-    const thatDateMS_FirstCheck = new Date("2024-12-16T23:59:59").getTime()
+    const thatDateMS_FirstCheck = new Date("2024-12-17T00:00:00").getTime()
 
     if (thatDateMS_FirstCheck > nowDateMS_FirstCheck) {
         all.classList.add('hidden')
@@ -32,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(function() {
         const nowDateMS = new Date().getTime()
-        const thatDateMS = new Date("2024-12-16T23:59:59").getTime()
+        const thatDateMS = new Date("2024-12-17T00:00:00").getTime()
 
         if (thatDateMS > nowDateMS) {
             all.classList.add('hidden')

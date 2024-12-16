@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgb(18, 18, 18) !important;
+    background-color: rgb(12, 12, 12) !important;
 }
 
 .countdown-text {
@@ -24,13 +24,27 @@ body {
     top: 20%;
     left: -2%;
     right: auto;
+    box-shadow: 0 0 1000px 100px rgb(165, 8, 8);
 }
 
-#first-blur-glow {
+#second-blur-glow {
     position: absolute;
-    top: 35%;
+    top: 75%;
     left: auto;
     right: -5%;
+    box-shadow: 0 0 1000px 100px rgb(177, 10, 10);
+}
+
+#third-blur-glow {
+    position: absolute;
+    top: 95%;
+    left: -8%;
+    right: auto;
+    box-shadow: 0 0 700px 100px rgb(131, 6, 6)
+}
+
+.blur-glow {
+    z-index: -100;
 }
 
 .open-transition {
@@ -38,11 +52,7 @@ body {
 }
 
 .love-transition {
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(163, 7, 7), rgb(145, 6, 6));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: loveText infinite ease 1s;
+    color: rgb(155, 6, 6) !important;
 }
 
 .hidden {
